@@ -6,6 +6,7 @@ const __dirname = path.dirname(new URL(import.meta.url).pathname)
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/dist",
   plugins: [react()],
   build: {
     outDir: path.resolve(__dirname, '../dist'),
